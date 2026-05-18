@@ -17,7 +17,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
 
     "rest_framework",
-    "rest_framework_simplejwt.token_blacklist",
+    "rest_framework_simplejwt",
     "corsheaders",
 
     "accounts",
@@ -94,7 +94,7 @@ STATICFILES_DIRS = [
 MEDIA_URL = "/media/"
 MEDIA_ROOT = BASE_DIR / "media"
 
-FILE_UPLOAD_MAX_MEMORY_SIZE = 1024 * 1024 * 50
-DATA_UPLOAD_MAX_MEMORY_SIZE = 1024 * 1024 * 60
+FILE_UPLOAD_MAX_MEMORY_SIZE = 1024 * 1024 * 1024  # 1 GB
+DATA_UPLOAD_MAX_MEMORY_SIZE = 1024 * 1024 * 1024  # 1 GB
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
